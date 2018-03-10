@@ -10,11 +10,29 @@ public class User {
 
     @Id
     private String id;
+    private String fullName;
     private String email;
     private String pwd;
+    private String newPwd;
     private int type;
 
     public User() {
+    }
+
+    public String getNewPwd() {
+        return newPwd;
+    }
+
+    public void setNewPwd(String newPwd) {
+        this.newPwd = newPwd;
+    }
+
+    public String getFullName() {
+        return fullName;
+    }
+
+    public void setFullName(String fullName) {
+        this.fullName = fullName;
     }
 
     public int getType() {
