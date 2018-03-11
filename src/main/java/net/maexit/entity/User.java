@@ -1,5 +1,6 @@
 package net.maexit.entity;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 import org.springframework.data.annotation.Id;
 
 /**
@@ -12,9 +13,13 @@ public class User {
     private String id;
     private String fullName;
     private String email;
-    private String pwd;
-    private String newPwd;
     private int type;
+    @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
+    private String pwd;
+    @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
+    private String newPwd;
+
+
 
     public User() {
     }
