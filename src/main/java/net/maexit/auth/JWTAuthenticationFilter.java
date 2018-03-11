@@ -7,6 +7,8 @@ package net.maexit.auth;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
+import net.maexit.service.UserService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.Authentication;
@@ -25,17 +27,21 @@ import java.util.Date;
 
 public class JWTAuthenticationFilter extends UsernamePasswordAuthenticationFilter {
 
+    private UserService userService;
     private AuthenticationManager authenticationManager;
+    private net.maexit.entity.User creds;
 
-    public JWTAuthenticationFilter(AuthenticationManager authenticationManager) {
+
+    public JWTAuthenticationFilter(AuthenticationManager authenticationManager, UserService userService) {
         this.authenticationManager = authenticationManager;
+        this.userService=userService;
     }
 
     @Override
     public Authentication attemptAuthentication(HttpServletRequest req,
                                                 HttpServletResponse res) throws AuthenticationException {
         try {
-            net.maexit.entity.User creds = new ObjectMapper()
+            creds = new ObjectMapper()
                     .readValue(req.getInputStream(), net.maexit.entity.User.class);
 
             return authenticationManager.authenticate(
@@ -62,6 +68,15 @@ public class JWTAuthenticationFilter extends UsernamePasswordAuthenticationFilte
                 .compact();
         res.addHeader(SecurityUtils.HEADER_STRING, SecurityUtils.TOKEN_PREFIX + token);
         res.addHeader("Access-Control-Expose-Headers", "Access-Control-Allow-Origin, Access-Control-Allow-Credentials");
-        res.getWriter().write("{\"token\" : \"" + token+"\"}");
+        StringBuilder sb = new StringBuilder();
+
+        net.maexit.entity.User user = userService.findByEmail(creds.getEmail());
+
+        sb.append("{");
+        sb.append("\"token\" : \"" + token + "\",");
+        sb.append("\"email\" : \"" + user.getEmail() + "\",");
+        sb.append("\"type\" : " + user.getType() + "");
+        sb.append("}");
+        res.getWriter().write(sb.toString());
     }
 }
