@@ -13,8 +13,12 @@ import java.util.Optional;
 public interface QuestionRepository extends MongoRepository<Question, String> {
 
     public Optional<Question> findById(String id);
+
     public List<Question> findAll();
+
     public Question insert(Question question);
+
+    public List<Question> findAllByKvdId(int id);
 
 
 }
