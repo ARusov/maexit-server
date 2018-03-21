@@ -14,8 +14,8 @@ public class SecurityUtils {
     public static final String TOKEN_PREFIX = "Bearer ";
     public static final String HEADER_STRING = "Authorization";
     public static final String SIGN_UP_URL = "/api/user";
-    public static final String TEST_URL = "/test/*";
-    public static final String PUBLIC_URL = "/publicapi/*";
+    public static final String TEST_URL = "/test/**";
+    public static final String PUBLIC_URL = "/publicapi/**";
 
     public static String generateToken(String username) {
         return Jwts.builder()

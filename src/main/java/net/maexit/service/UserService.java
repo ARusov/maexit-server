@@ -29,10 +29,11 @@ public class UserService implements UserDetailsService {
 
 
     public User findByEmail(String email) {
-        if (email != null) {
-            return userRepository.findByEmail(email);
-        }
-        return null;
+        return userRepository.findByEmail(email);
+    }
+
+    public User findByEmailAndPwd(User user) {
+        return userRepository.findByEmailAndPwd(user.getEmail(), user.getPwd());
     }
 
     public User insert(User user) {
@@ -41,7 +42,7 @@ public class UserService implements UserDetailsService {
             if (userDB != null && !userDB.getId().isEmpty()) {
                 throw new UserException("User already exists " + user.getEmail());
             }
-            user.setPwd(bCryptPasswordEncoder().encode(user.getPwd()));
+//            user.setPwd(bCryptPasswordEncoder().encode(user.getPwd()));
             userRepository.insert(user);
         }
         return null;

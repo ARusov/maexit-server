@@ -1,0 +1,5 @@
+amazonProperties:
+  endpointUrl: https://s3.eu-central-1.amazonaws.com
+  accessKey: AKIAJZMDK3H6AKOSM5TA
+  secretKey: 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
+  bucketName: maexit-video

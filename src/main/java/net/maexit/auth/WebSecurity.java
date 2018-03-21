@@ -22,7 +22,7 @@ import org.springframework.web.cors.CorsConfigurationSource;
 import org.springframework.web.cors.UrlBasedCorsConfigurationSource;
 
 
-@EnableWebSecurity
+//@EnableWebSecurity
 @Component
 public class WebSecurity extends WebSecurityConfigurerAdapter {
 
@@ -44,7 +44,8 @@ public class WebSecurity extends WebSecurityConfigurerAdapter {
                 .antMatchers(HttpMethod.GET, SecurityUtils.TEST_URL).permitAll()
                 .antMatchers(HttpMethod.GET, SecurityUtils.PUBLIC_URL).permitAll()
                 .antMatchers(HttpMethod.POST, SecurityUtils.PUBLIC_URL).permitAll()
-                .anyRequest().authenticated()
+                .anyRequest().permitAll()
+//                .anyRequest().authenticated()
                 .and()
                 .logout().permitAll()
                 .and()

@@ -7,12 +7,17 @@ import net.maexit.service.IndustryService;
 import net.maexit.service.KeyValueDriverService;
 import net.maexit.service.QuestionService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.mail.MailException;
+import org.springframework.mail.javamail.JavaMailSender;
+import org.springframework.mail.javamail.MimeMessageHelper;
+import org.springframework.mail.javamail.MimeMessagePreparator;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
+import org.thymeleaf.TemplateEngine;
+import org.thymeleaf.context.Context;
 
-import java.io.IOException;
 import java.util.List;
 
 /**
@@ -21,6 +26,12 @@ import java.util.List;
 @CrossOrigin
 @RestController
 public class TestController {
+
+    @Autowired
+    private JavaMailSender mailSender;
+
+    @Autowired
+    private TemplateEngine templateEngine;
 
     @Autowired
     private KeyValueDriverService keyValueDriverService;
@@ -100,6 +111,35 @@ public class TestController {
 
 
         return industryService.findAll();
+    }
+
+    @RequestMapping("/test/email")
+    @ResponseBody
+    public boolean sendEmail() {
+
+
+        MimeMessagePreparator messagePreparator = mimeMessage -> {
+            MimeMessageHelper messageHelper = new MimeMessageHelper(mimeMessage);
+            messageHelper.setFrom("no-reply@maexit.de");
+            messageHelper.setTo("a.s.rusov@gmail.com");
+            messageHelper.setSubject("Sample mail subject");
+            String content = build("loginaaaaa");
+            messageHelper.setText(content, true);
+        };
+        try {
+            mailSender.send(messagePreparator);
+        } catch (MailException e) {
+            System.out.println(e.getMessage());
+            return false;
+        }
+
+        return true;
+    }
+
+    public String build(String login) {
+        Context context = new Context();
+        context.setVariable(    "login", login);
+        return templateEngine.process("email_template", context);
     }
 
 }

@@ -3,11 +3,20 @@ package net.maexit.controller;
 import net.maexit.entity.Answer;
 import net.maexit.entity.Industry;
 import net.maexit.entity.Question;
+import net.maexit.entity.User;
 import net.maexit.service.AnswerService;
 import net.maexit.service.IndustryService;
 import net.maexit.service.QuestionService;
+import net.maexit.service.UserService;
+import org.apache.commons.lang3.RandomStringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.mail.MailException;
+import org.springframework.mail.javamail.JavaMailSender;
+import org.springframework.mail.javamail.MimeMessageHelper;
+import org.springframework.mail.javamail.MimeMessagePreparator;
 import org.springframework.web.bind.annotation.*;
+import org.thymeleaf.TemplateEngine;
+import org.thymeleaf.context.Context;
 
 import java.util.List;
 
@@ -20,6 +29,12 @@ import java.util.List;
 @RequestMapping("/publicapi")
 public class PublicController {
 
+    @Autowired
+    private JavaMailSender mailSender;
+
+    @Autowired
+    private TemplateEngine templateEngine;
+
 
     @Autowired
     private QuestionService questionService;
@@ -29,6 +44,9 @@ public class PublicController {
 
     @Autowired
     private AnswerService answerService;
+
+    @Autowired
+    private UserService userService;
 
 
     @RequestMapping("/questions")
@@ -46,6 +64,63 @@ public class PublicController {
 
     @RequestMapping(value = "/answers", method = RequestMethod.POST)
     public void saveAnswer(@RequestBody Answer answer) {
+
         answerService.insert(answer);
+
+        User user=userService.findByEmail(answer.getEmail());
+        if(user==null){
+            User newUser= new User();
+            newUser.setType(1);
+            newUser.setEmail(answer.getEmail());
+            String pwd =generatePwd();
+            newUser.setPwd(pwd);
+            userService.insert(newUser);
+
+            sendEmail(newUser);
+        }
+
+    }
+
+
+    @RequestMapping(value = "/user/check", method = RequestMethod.POST)
+    @ResponseBody
+    public boolean checkUser(@RequestBody User user) {
+
+        Answer answer = answerService.findByEmail(user.getEmail());
+        if (answer != null && !answer.getId().isEmpty()) {
+            return true;
+        }
+        return false;
+    }
+
+
+    private String buildEmail(User user) {
+        Context context = new Context();
+        context.setVariable(    "login", user.getEmail());
+        context.setVariable(    "pwd", user.getPwd());
+        return templateEngine.process("email_template", context);
+    }
+
+    public boolean sendEmail(User user) {
+        MimeMessagePreparator messagePreparator = mimeMessage -> {
+            MimeMessageHelper messageHelper = new MimeMessageHelper(mimeMessage);
+            messageHelper.setFrom("no-reply@maexit.de");
+            messageHelper.setTo(user.getEmail());
+            messageHelper.setSubject("MAEXIT.NET | Ihre Zugangsdaten");
+            String content = buildEmail(user);
+            messageHelper.setText(content, true);
+        };
+        try {
+            mailSender.send(messagePreparator);
+        } catch (MailException e) {
+            System.out.println(e.getMessage());
+            return false;
+        }
+
+        return true;
+    }
+    private String generatePwd(){
+        String characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+        return RandomStringUtils.random( 15, characters );
     }
 }

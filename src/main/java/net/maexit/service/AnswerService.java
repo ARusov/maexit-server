@@ -15,8 +15,9 @@ public class AnswerService {
     @Autowired
     private AnswerRepository repository;
 
-    public Answer findById(String id) {
-        return repository.findById(id).get();
+    public Answer findByEmail(String email) {
+
+        return repository.findByEmail(email);
     }
 
     public List<Answer> findAll() {
