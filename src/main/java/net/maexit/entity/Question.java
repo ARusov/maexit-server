@@ -11,6 +11,7 @@ public class Question {
     private String id;
     private int kvdId;
     private String text;
+    private String influencerText;
     private String min;
     private String max;
     private int value;
@@ -73,5 +74,11 @@ public class Question {
         this.max = max;
     }
 
+    public String getInfluencerText() {
+        return influencerText;
+    }
 
+    public void setInfluencerText(String influencerText) {
+        this.influencerText = influencerText;
+    }
 }

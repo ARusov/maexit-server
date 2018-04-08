@@ -18,7 +18,11 @@ import org.springframework.web.bind.annotation.*;
 import org.thymeleaf.TemplateEngine;
 import org.thymeleaf.context.Context;
 
+import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
+import java.util.stream.Collectors;
 
 /**
  * Created by arusov on 12.03.2018.
@@ -65,20 +69,36 @@ public class PublicController {
     @RequestMapping(value = "/answers", method = RequestMethod.POST)
     public void saveAnswer(@RequestBody Answer answer) {
 
-        answerService.insert(answer);
+        if (answer != null) {
+            List<Question> questions = questionService.findAll();
+            List<Question> aQuestions = answer.getQuestions();
 
-        User user=userService.findByEmail(answer.getEmail());
-        if(user==null){
-            User newUser= new User();
-            newUser.setType(1);
-            newUser.setEmail(answer.getEmail());
-            String pwd =generatePwd();
-            newUser.setPwd(pwd);
-            userService.insert(newUser);
+            Set<Question> sq=new HashSet<>(questions);
 
-            sendEmail(newUser);
+            for(Question q:questions){
+                for(Question aq:aQuestions){
+                    if(aq.getId().equals(q.getId())){
+                        sq.remove(q);
+                    }
+                }
+            }
+
+
+            answer.getQuestions().addAll(sq);
+            answerService.insert(answer);
+
+            User user = userService.findByEmail(answer.getEmail());
+            if (user == null) {
+                User newUser = new User();
+                newUser.setType(1);
+                newUser.setEmail(answer.getEmail());
+                String pwd = generatePwd();
+                newUser.setPwd(pwd);
+                userService.insert(newUser);
+
+                sendEmail(newUser);
+            }
         }
-
     }
 
 
@@ -96,8 +116,8 @@ public class PublicController {
 
     private String buildEmail(User user) {
         Context context = new Context();
-        context.setVariable(    "login", user.getEmail());
-        context.setVariable(    "pwd", user.getPwd());
+        context.setVariable("login", user.getEmail());
+        context.setVariable("pwd", user.getPwd());
         return templateEngine.process("email_template", context);
     }
 
@@ -119,8 +139,9 @@ public class PublicController {
 
         return true;
     }
-    private String generatePwd(){
+
+    private String generatePwd() {
         String characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
-        return RandomStringUtils.random( 15, characters );
+        return RandomStringUtils.random(15, characters);
     }
 }

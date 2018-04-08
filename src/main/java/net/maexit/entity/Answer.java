@@ -15,6 +15,7 @@ public class Answer {
     private String email;
 
     private int industruId;
+
     List<Question> questions;
 
     public Answer() {

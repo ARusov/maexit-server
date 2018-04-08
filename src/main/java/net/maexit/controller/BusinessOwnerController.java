@@ -4,6 +4,7 @@ import com.lowagie.text.DocumentException;
 import net.maexit.entity.*;
 import net.maexit.repository.AnswerRepository;
 import net.maexit.repository.KeyValueDriverRepository;
+import net.maexit.service.KeyValueDriverService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpHeaders;
@@ -35,39 +36,21 @@ public class BusinessOwnerController {
     @Autowired
     private TemplateEngine templateEngine;
 
+    @Autowired
+    private KeyValueDriverService keyValueDriverService;
+
+
+    @RequestMapping("/kvd")
+    @ResponseBody
+    public List<KeyValueDriver> getKeyValueDrivers() {
+        return keyValueDriverService.findAll();
+    }
 
     @RequestMapping("/answer/{email}")
     @ResponseBody
-    public BODashboard getBusinessOwnerAnswer(@PathVariable("email") String email) {
+    public Answer getBusinessOwnerAnswer(@PathVariable("email") String email) {
 
-        List<BusinessOwnerKVD> bokvds = new ArrayList<>();
-
-        Answer answer = answerRepository.findByEmail(email);
-        BODashboard boDashboard = new BODashboard();
-        if (answer != null) {
-            for (KeyValueDriver kvd : kvdRepository.findAll()) {
-                int i = 0;
-                int kvdsum = 0;
-                for (Question question : answer.getQuestions()) {
-                    if (kvd.getId() == question.getKvdId()) {
-                        i++;
-                        kvdsum = kvdsum + question.getValue();
-                    }
-                }
-
-                BusinessOwnerKVD bokvd = new BusinessOwnerKVD(kvd.getId(), kvd.getName(), kvdsum / i);
-                bokvds.add(bokvd);
-            }
-            boDashboard.setKvds(bokvds);
-            int index = 0;
-            for (BusinessOwnerKVD bokvd : bokvds) {
-                index = index + bokvd.getKvdIndex();
-            }
-            boDashboard.setIndex(index / bokvds.size());
-            boDashboard.setId(answer.getId());
-        }
-
-        return boDashboard;
+        return answerRepository.findByEmail(email);
     }
 
     @RequestMapping(value = "/getpdfreport/{id}", method = RequestMethod.GET)
@@ -104,26 +87,26 @@ public class BusinessOwnerController {
         }
 
         String color = "yellow";
-        if(boDashboard.getIndex()<50){
-            color="red";
+        if (boDashboard.getIndex() < 50) {
+            color = "red";
         }
-        if(boDashboard.getIndex()>80){
-            color="gren";
+        if (boDashboard.getIndex() > 80) {
+            color = "gren";
         }
 
 
         Context ctx = new Context();
-        ctx.setVariable("punkt1",getValues(color));
-        ctx.setVariable("punkt2",getValues(color));
-        ctx.setVariable("punkt3",getValues(color));
-        ctx.setVariable("punkt4",getValues(color));
-        ctx.setVariable("punkt5",getValues(color));
-        ctx.setVariable("punkt6",getValues(color));
-        ctx.setVariable("punkt7",getValues(color));
-        ctx.setVariable("punkt8",getValues(color));
-        ctx.setVariable("punkt9",getValues(color));
-        ctx.setVariable("punkt10",getValues(color));
-        ctx.setVariable("punkt11",getValues(color));
+        ctx.setVariable("punkt1", getValues(color));
+        ctx.setVariable("punkt2", getValues(color));
+        ctx.setVariable("punkt3", getValues(color));
+        ctx.setVariable("punkt4", getValues(color));
+        ctx.setVariable("punkt5", getValues(color));
+        ctx.setVariable("punkt6", getValues(color));
+        ctx.setVariable("punkt7", getValues(color));
+        ctx.setVariable("punkt8", getValues(color));
+        ctx.setVariable("punkt9", getValues(color));
+        ctx.setVariable("punkt10", getValues(color));
+        ctx.setVariable("punkt11", getValues(color));
 
 
         String processedHtml = templateEngine.process("report", ctx);
@@ -160,4 +143,6 @@ public class BusinessOwnerController {
         return map.get(color);
 
     }
+
+
 }

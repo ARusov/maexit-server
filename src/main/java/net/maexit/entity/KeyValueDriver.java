@@ -10,6 +10,16 @@ public class KeyValueDriver {
     @Id
     private int id;
     private String name;
+    private String text;
+    private String color;
+
+    public String getColor() {
+        return color;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
+    }
 
     public KeyValueDriver() {
     }
@@ -33,5 +43,13 @@ public class KeyValueDriver {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public String getText() {
+        return text;
+    }
+
+    public void setText(String text) {
+        this.text = text;
     }
 }

@@ -17,7 +17,6 @@ public interface AnswerRepository extends MongoRepository<Answer, String> {
 
     public Answer findByEmail(String email);
 
-
     public Answer insert(Answer industry);
 
 }

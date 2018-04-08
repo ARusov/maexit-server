@@ -39,9 +39,9 @@ public class QuestionService {
 
         List<KeyValueDriver> kvds = keyValueDriverService.findAll();
         for (KeyValueDriver k : kvds) {
-            List<Question> questionsByKVD=repository.findAllByKvdId(k.getId());
+            List<Question> questionsByKVD = repository.findAllByKvdId(k.getId());
             Collections.shuffle(questions, new Random());
-            questions.addAll(questionsByKVD.subList(0,4));
+            questions.addAll(questionsByKVD.subList(0, 4));
         }
         Collections.shuffle(questions, new Random());
 
