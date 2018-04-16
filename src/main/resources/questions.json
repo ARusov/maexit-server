@@ -1,0 +1,479 @@
+[
+  {
+    "id": "5aa52b771c6cf5718c680ea8",
+    "kvdId": 1,
+    "text": "Haben Sie das Gefühl, dass Sie Ihre Buchhaltungsprozesse für das Bestehen einer externen Prüfung noch verbessern müssen?",
+    "influencerText": "Professionelle digitale Administration in Finanzmanagement und Unternehmensführung",
+    "min": "Ich schreibe meine Rechnungen mit Word und lege sie dann im Leitz Ordner ab.",
+    "max": "Wir haben unsere Buchhaltung voll automatisiert und digitalisiert im Griff.",
+    "value": 0
+  },
+  {
+    "id": "5aa52b781c6cf5718c680ea9",
+    "kvdId": 1,
+    "text": "Denken Sie, Sie könnten die  Produktivität Ihres Unternehmens noch besser ausschöpfen, wenn Sie das Wissen über Ihre Kunden und Ihre wichtigsten Kernprozesse präzise dokumentieren und offen verfügbar machen?",
+    "influencerText": "Transparente und konsistente Prozessdokumentation",
+    "min": "Prozesse sind nicht dokumentiert, sondern werden gelebt und das Wissen steckt in den Köpfen.",
+    "max": "Unsere Wertschöpfungsprozesse und Kundeninfos sind voll dokumentiert und digitalisiert.",
+    "value": 0
+  },
+  {
+    "id": "5aa52b791c6cf5718c680eaa",
+    "kvdId": 1,
+    "text": "Glauben Sie, daß Sie das Wissen Ihrer besten Mitarbeiter noch optimaler nutzen könnten, um innovative Produkte, effizientere Prozesse und mehr Profit zu erzielen?",
+    "influencerText": "Aktives und gut strukturiertes Wissensmanagement",
+    "min": "Das Wissen muss an neue Kollegen oder Chefs weitergegeben werden.",
+    "max": "Es gibt ein digitales Unternehmenswiki in dem das gesamte KnowHow, für alle zugänglich ist.",
+    "value": 0
+  },
+  {
+    "id": "5aa52b791c6cf5718c680eab",
+    "kvdId": 1,
+    "text": "Denken Sie, daß Sie noch erfolgreicher sein könnten, wenn Sie die Top Experten Ihrer Branche für Ihr Unternehmen gewinnen könnten?",
+    "influencerText": "Innovative HR / Recruiting Prozesse und Incentivierung",
+    "min": "Es gelingt uns nicht, Fachkräfte zu rekrutieren und unsere Fluktuation zu senken.",
+    "max": "Es fällt uns sehr leicht, neue Fachkräfte zu rekrutieren und langfristig zu binden.",
+    "value": 0
+  },
+  {
+    "id": "5aa52b791c6cf5718c680eac",
+    "kvdId": 1,
+    "text": "Daten sind die neuen Wettbewerbsvorteile. Glauben Sie, daß Sie Ihre IT Infrastruktur und Big Data Nutzung noch verbessern könnten, für noch mehr Performance und Sicherheit?",
+    "influencerText": "Hohe Standards an Leistung und Sicherheit in Datenverarbeitung & IT Infrastruktur",
+    "min": "Eine professionelle Infrastruktur und Security Betreuung ist nicht vorhanden.",
+    "max": "Unsere eigene IT Abteilung / Partner betreut für uns die Infrastruktur und Sicherheit.",
+    "value": 0
+  },
+  {
+    "id": "5aa52b791c6cf5718c680ead",
+    "kvdId": 1,
+    "text": "Glauben Sie, Sie könnten Ihre geschäftlichen Entscheidungen und Zielkontrollen noch erfolgreicher gestalten, um Ihre Wachstumsstrategie noch besser in Aktionen umzusetzen?",
+    "influencerText": "Kontinuierliches Business Planning, Tracking und Adapting",
+    "min": "Wir erstellen bisher keine regelmäßige Planung über die Monatsebene hinaus.",
+    "max": "Wir überprüfen regelmäßig unsere Business-, Liquiditäts- und Bilanzplanung.",
+    "value": 0
+  },
+  {
+    "id": "5aa52b791c6cf5718c680eae",
+    "kvdId": 1,
+    "text": "Haben Sie das Gefühl, dass Sie mit der richtigen Nutzung von KPI Kennzahlen, noch schnellere und bessere finanzielle und strategische Aussagen und Entscheidungen treffen können?",
+    "influencerText": "Prozess- und Werte orientiertes Controlling",
+    "min": "Ich arbeite nicht mit strategischen Kennzahlen für meine Unternehmenssteuerung.",
+    "max": "Ich kenne und überwache alle wichtigen Kennzahlen und kann sofort einen Status Quo abrufen.",
+    "value": 0
+  },
+  {
+    "id": "5aa52b791c6cf5718c680eaf",
+    "kvdId": 1,
+    "text": "Denken Sie, daß Sie mit den richtigen Beratern Ihre Unternehmensstrukturen- und -prozesse noch effizientergestalten könnten?",
+    "influencerText": "Gezielter Einsatz externer Berater und Expertise zur Steigerung der Ergebnisqualität und -performance",
+    "min": "Wir arbeiten nicht mit Beratern zusammen, da diese zu teuer sind sondern entscheiden intern.",
+    "max": "Wir haben in den wichtigsten strategischen Themen entsprechende Experten an unserer Seite.",
+    "value": 0
+  },
+  {
+    "id": "5aa52b791c6cf5718c680eb0",
+    "kvdId": 2,
+    "text": "Glauben Sie, dass Sie den Cashflow-Bedarf und die Liquiditäts-Beschaffung in Ihrem Unternehmen noch optimieren können?",
+    "influencerText": "Gute Verfügbarkeit und ausreichender Umfang von Working Capital",
+    "min": "Wir brauchen mehr Cash als wir erwirtschaften, und versuchen ständig neues Kapital zu leihen.",
+    "max": "Mein Unternehmen erwirtschaftet einen Überschuss, den ich an die Teilhaber ausschütten kann.",
+    "value": 0
+  },
+  {
+    "id": "5aa52b7a1c6cf5718c680eb1",
+    "kvdId": 2,
+    "text": "Haben Sie das Gefühl, dass Sie mit effektiveren Kunden-Zahlungsmodellen Ihren Cashflow noch stark verbessern können?",
+    "influencerText": "Schnelle Bezahlung durch entsprechende Kundenzahlungsmodelle",
+    "min": "Bei uns sind 100% zahlbar in 14-30 Tagen, nachdem der Kunde erhalten hat, was er gekauft hat",
+    "max": "Bei uns werden 100%  fällig, wenn der Kunde den Kauf tätigt",
+    "value": 0
+  },
+  {
+    "id": "5aa52b7a1c6cf5718c680eb2",
+    "kvdId": 2,
+    "text": "Denken Sie, dass Sie mit effektiveren Lieferanten-Zahlungsmodellen Ihren Cashflow noch stark verbessern können?",
+    "influencerText": "Späte Bezahlung durch entsprechende Lieferantenzahlungsmodelle",
+    "min": "Für uns werden 100% fällig bei Kaufabschluss",
+    "max": "Für uns sind 100% zahlbar in 14-30 Tagen, nachdem wir erhalten haben, was wir erworben haben",
+    "value": 0
+  },
+  {
+    "id": "5aa52b7a1c6cf5718c680eb3",
+    "kvdId": 2,
+    "text": "Glauben Sie, das Sie den Anteil von Overheadkosten im Verkaufspreis Ihrer Produkte und Services noch reduzieren könnten um Ihre Gewinnmarge zu steigern?",
+    "influencerText": "Geringe und effektive Overheadkostenstruktur",
+    "min": "Unsere Overheadkosten betragen über 20%",
+    "max": "Unsere Overheadkosten betragen bereits nur 1%-5%",
+    "value": 0
+  },
+  {
+    "id": "5aa52b7a1c6cf5718c680eb4",
+    "kvdId": 2,
+    "text": "Denken Sie, dass es noch Optimierungspotenzial gibt, um Ihre Lager- und Lieferprozesse noch kosteneffektiver und leistungseffizienter zu gestalten?",
+    "influencerText": "Geringe Lagerkosten und effektive Logistikprozesse",
+    "min": "Wir halten einen hohen Lagerbestand um Nachfragespitzen oder Engpässe abfedern zu können.",
+    "max": "Unsere Lieferkette ist optimiert und risikobewertet und wir liefern Just In Time.",
+    "value": 0
+  },
+  {
+    "id": "5aa52b7a1c6cf5718c680eb5",
+    "kvdId": 3,
+    "text": "Ist der Anteil von wiederkehrenden Einnahmen an Ihrem Umsatz schon ausreichend, oder denken Sie, daß Sie mit weiteren, innovativen Vertragsmodellen noch mehr Umsatzsicherheit erzielen können?",
+    "influencerText": "Steigender Umsatzanteil aus wiederkehrenden Einnahmenmodellen",
+    "min": "Unser Umsatz besteht zu 100% aus einmaligen Einnahmequellen.",
+    "max": "Wir generieren unseren Umsatz zu 100% aus wiederkehrenden Einnahmen.",
+    "value": 0
+  },
+  {
+    "id": "5aa52b7a1c6cf5718c680eb6",
+    "kvdId": 3,
+    "text": "Die letzen Monate und Jahre waren ein voller Erfolg. Die Geschäftsabschlüsse waren so hoch wie noch nie. Wird das so bleiben oder glauben Sie, Sie könnten mit geeigneten Maßnahmen diese Erfolge wiederholen, wenn nicht sogar zu übertreffen?",
+    "influencerText": "Plausible und gesicherte Umsatzentwicklung",
+    "min": "Wir kämpfen um jeden Auftrag.",
+    "max": "Unsere Produkt- und Vertriebsstrategie und unser Salesteam sticht jeden Wettbewerber aus.",
+    "value": 0
+  },
+  {
+    "id": "5aa52b7a1c6cf5718c680eb7",
+    "kvdId": 3,
+    "text": "Ist Ihr Umsatz bereits bestens gegen saisonale oder zyklische Schwankungen gewappnet oder könnten Sie mit cleveren Strategien Ihre Auslastung und Einnahmen effektiver gestalten?",
+    "influencerText": "Ausreichende Absicherung und Ausgleich bzgl. Saisonalität / Zyklik",
+    "min": "Wir müssen in wenigen Monaten den Umsatz reinholen, um das restliche Jahr davon zu zehren.",
+    "max": "Unsere Produktionsauslastung und Umsatz ist auf höchstem Niveau und völlig saisonunabhängig.",
+    "value": 0
+  },
+  {
+    "id": "5aa52b7a1c6cf5718c680eb8",
+    "kvdId": 3,
+    "text": "Haben Sie das Gefühl, die Risiken aus Ihren bestehenden Verträgen im Griff zu haben oder können Sie mit professioneller Anleitung versteckte Risiken besser identifizieren und Ihr Unternehmen dagegen absichern?",
+    "influencerText": "Aktives und umfassendes Forderungsausfall- und Risikomanagement",
+    "min": "Ich verwende branchenübliche Verträge. Eine Prüfung ist nicht erforderlich.",
+    "max": "Meine Verträge sind zu 100% juristisch geprüft und risikobewertet.",
+    "value": 0
+  },
+  {
+    "id": "5aa52b7b1c6cf5718c680eb9",
+    "kvdId": 3,
+    "text": "Wie sicher ist es, daß Sie nachhaltig die gleichen Umsätze auch in den nächsten Monaten / Jahren erzielen? Denken Sie, daß Sie noch mehr langfristige Umsatzquellen bzw. -sicherheit aufbauen sollten?",
+    "influencerText": "Hoher Umsatzanteil und nachhaltige Umsätze aus aktivem Vertragsbestand",
+    "min": "Unser Geschäftsmodel basiert zu 100% auf Einmalaufträgen.",
+    "max": "Wir haben zu 100% langfristige, unkündbare Verträge (>5 Jahre)",
+    "value": 0
+  },
+  {
+    "id": "5aa52b7b1c6cf5718c680eba",
+    "kvdId": 3,
+    "text": "Unerwartete Veränderungen bei finanziellen Verpflichtungen und Verbindlichkeiten können ganze Unternehmen gefährden. Denken Sie, dass Sie die Strukturen und Belastungen Ihrer Verbindlichkeiten noch optimieren könnten?",
+    "influencerText": "Geringe Eintrittswahrscheinlichkeit und Umfang von Verbindlichkeiten und Verpflichtungen",
+    "min": "Die unerwartete Fälligstellung unserer Verpflichtungen führt zur direkten Insolvenz.",
+    "max": "Wir haben keine Verbindlichkeiten und sind frei von finanziellen Verpflichtungen",
+    "value": 0
+  },
+  {
+    "id": "5aa52b7b1c6cf5718c680ebb",
+    "kvdId": 2,
+    "text": "Glauben Sie, dass Ihre liquiden Mittel noch verbessern sollten, um 3-6 Monate den laufenden Betrieb vorfinanzieren zu können?",
+    "influencerText": "Gute Verfügbarkeit und ausreichender Umfang von Working Capital",
+    "min": "Wir benötigen die Einnahmen aus jedem Monat, um unseren Betrieb zu finanzieren.",
+    "max": "Unsere Barmittel reichen aus, um den Geschäftsbetrieb für 6 Monate vorzufinanzieren.",
+    "value": 0
+  },
+  {
+    "id": "5aa52b7b1c6cf5718c680ebc",
+    "kvdId": 3,
+    "text": "Haben Sie das Gefühl, sich und Ihr Unternehmen noch besser gegen existenzgefährdende Risiken absichern zu können? ",
+    "influencerText": "Plausible und gesicherte Rückstellungen und Vorsorgen / Pensionspläne",
+    "min": "Wir sind definitiv unterversichert und einem existenziellem Risiko schutzlos ausgesetzt.",
+    "max": "Wir haben die größten persönlichen und unternehmerischen Risiken mit Versicherungen abgedeckt.",
+    "value": 0
+  },
+  {
+    "id": "5aa52b7b1c6cf5718c680ebd",
+    "kvdId": 4,
+    "text": "Denken Sie, Sie könnten Ihre Produkt- und Dienstleistungspallette noch breiter und globaler aufstellen??    ",
+    "influencerText": "Wachsende Markt- und Branchenunabhängigkeit durch globale Diversifikation und erweitertes Produktportfolio",
+    "min": "Wir bieten nur wenige Produkte an und unser, Absatz ist nur im deutschsprachigen Raum",
+    "max": "Wir verfügen über eine breite Produktpalette und sind global sehr gut aufgestellt.",
+    "value": 0
+  },
+  {
+    "id": "5aa52b7b1c6cf5718c680ebe",
+    "kvdId": 4,
+    "text": "Glauben Sie, Sie könnten mit erprobten Strategien, Ihre Produkte und Dienstleistungen besser etablieren, Ihre Produktführerschaft auf- bzw. ausbauen und eine starke Preissetzungsmacht erzielen?",
+    "influencerText": "Einflussreiche Marktposition bieten Führungs- und Preisgestaltungsmacht",
+    "min": "Wir haben austauschbare Produkte und sehr geringe Preisgestaltungsmacht, meist zu Lasten unserer Marge.",
+    "max": "Wir haben einzigartige Produkte und eine sehr hohe Preisgestaltungsmacht, Kunden kaufen fast zu jedem Preis.",
+    "value": 0
+  },
+  {
+    "id": "5aa52b7b1c6cf5718c680ebf",
+    "kvdId": 4,
+    "text": "Glauben Sie, daß Sie mit passenden Maßnahmen weitere Großkunden gewinnen und Ihre Abhängigkeit von einzelnen Auftraggebern reduzieren könnten?",
+    "influencerText": "Ausgeglichene Kundenumsatzverteilung",
+    "min": "Mein größter Kunde hat einen Umsatzanteil von mehr als 50%.",
+    "max": "Meine größten Kunden machen maximal 1%-15% von unserem Gesamtumsatz aus.",
+    "value": 0
+  },
+  {
+    "id": "5aa52b7b1c6cf5718c680ec0",
+    "kvdId": 4,
+    "text": "Haben Sie das Gefühl, daß Sie noch weitere Maßnahmen ergreifen müssen, um Ihr Unternehmen unabhängiger von kritischen Wissensmonopolen und persönlichen Entscheiderkontakten Ihrer Mitarbeiter zu machen?",
+    "influencerText": "Keine Kopf- und Kontaktmonopole durch  nachhaltige Regelungen",
+    "min": "Die Mitarbeiten sollen Ihr Wissen und Kontakte an Vertretungen und Nachfolger weitergeben.",
+    "max": "Entscheidendes Wissen und Kontakte sind dokumentiert und gesichert.",
+    "value": 0
+  },
+  {
+    "id": "5aa52b7c1c6cf5718c680ec1",
+    "kvdId": 4,
+    "text": "Denken Sie, dass Sie Ihre Recruiting Aktivitäten in soziale Medien bzw. interne Anreizsysteme effektiver ausschöpfen können, um kritische bzw. einzigartige Fachkräfte zu binden bzw. einen Ausfall abzusichern?",
+    "influencerText": "Sicherung der Fachkräfteverfügbarkeit auf erfolgskritischen Positionen",
+    "min": "Eine Doppelbesetzung können wir uns nicht leisten und wir schreiben nur nach Bedarf neue Stellen aus.",
+    "max": "Wir haben jede Schlüsselposition doppelt besetzt und bauen stetig interne Ressourcen auf",
+    "value": 0
+  },
+  {
+    "id": "5aa52b7c1c6cf5718c680ec2",
+    "kvdId": 4,
+    "text": "Haben Sie das Gefühl, daß Sie mit passenden Maßnahmen weitere Alternativ-Lieferanten aufbauen und Ihre Abhängigkeit von einzelnen Zulieferern reduzieren können?",
+    "influencerText": "Verfügbarkeit von Backup Lieferanten zur Abdeckung von Produktionsspitzen und Sicherstellung der Lieferantenunabhängigkeit",
+    "min": "Unsere Abhängigkeit von Kernlieferanten kann bei Ausfall zum Lieferstop führen.",
+    "max": "Wir haben unsere Kernbedarfe mit mind. 2 Lieferanten abgedeckt",
+    "value": 0
+  },
+  {
+    "id": "5aa52b7c1c6cf5718c680ec3",
+    "kvdId": 4,
+    "text": "Denken Sie, dass Sie alternative Technologien aufbauen können, um unabhängig von technischen oder politischen Veränderungen bzw. Marktanforderungen zu sein?",
+    "influencerText": "Verfügbarkeit von Alternativtechnologien zur Absicherung gegen Regulatorien oder schwacher Verhandlungsposition durch Technologieabhängigkeit",
+    "min": "Der Wegfall einer Kerntechnologie würde zum Produktionsstillstand führen, bis eine Alternative verfügbar ist.",
+    "max": "Wir sind unabhängig von einer einzelnen Technologie und könnten leicht auf Alternativen wechseln.",
+    "value": 0
+  },
+  {
+    "id": "5aa52b7c1c6cf5718c680ec4",
+    "kvdId": 5,
+    "text": "Haben Sie gefühlt Ihr Kundenmaximum schon erreicht oder denken Sie, daß Sie noch Potenzial haben, auf alten und neuen Wegen weitere Kunden gewinnen zu können?",
+    "influencerText": "Verkaufsteam bestens ausgestattet und ständig top geschult um die gesetzten Ziele zu übertreffen",
+    "min": "Unser Kundenmaximum ist erreicht und wir haben keine Kapazitäten mehr für Neukunden.",
+    "max": "Wir können unsere Produktion und Dienstleistung einfach skalieren und jede Nachfrage schnell befriedigen.",
+    "value": 0
+  },
+  {
+    "id": "5aa52b7c1c6cf5718c680ec5",
+    "kvdId": 5,
+    "text": "Glauben Sie, daß Sie noch lukrativere, digitale Produkte für Ihre Kundengruppen entwickeln können, die sich am geänderten, digitalen Verhalten Ihrer Kunden orientieren?",
+    "influencerText": "Großes Produktpotenzial, um die Produkttiefe zu erhöhen und weitere Dienstleistungen anzubieten",
+    "min": "Unsere Produkte und Dienstleistungen können nicht dem digitalen Kundenanspruch angepasst bzw. neuentwickelt werden.",
+    "max": "Unsere Produkte und Dienstleistungen sind zu 100% dem digitalen Verhalten und Anspruch unsere Kunden angepasst.",
+    "value": 0
+  },
+  {
+    "id": "5aa52b7d1c6cf5718c680ec6",
+    "kvdId": 5,
+    "text": "Denken Sie, daß Sie bei Ihren Kunden noch weitere bzw. komplementäre Produkte aus Ihrem Portfolio platzieren können?",
+    "influencerText": "Hohes Cross- und Up-Selling Potenzial um neue Kundengruppen zu erschließen und den Kundenwert zu erhöhen",
+    "min": "Unsere Kunden sind gesättigt. Wir verkaufen Ihnen schon Alles.",
+    "max": "Es gibt eine Menge Produkte oder Services, die wir an unsere bestehenden Kunden verkaufen könnten.",
+    "value": 0
+  },
+  {
+    "id": "5aa52b7d1c6cf5718c680ec7",
+    "kvdId": 5,
+    "text": "Haben Sie das Gefühl dass Sie mit erprobten Strategien neue Märkte aufbauen und lukrative Marktchancen schneller realisieren können?",
+    "influencerText": "Klare Wachstums- (Markt-) Chancen und Skalierungsfähigkeit erkennbar, die durch geringe Barrieren ausgeschöpft werden können",
+    "min": "Unsere Branche ist rückläufig und wir sind mit unseren Produkten und Dienstleistungen sehr regional gebunden.",
+    "max": "Wir sind in einer Wachstumsbranche und wir sind in allen verfügbaren Märkten bereits vertreten.",
+    "value": 0
+  },
+  {
+    "id": "5aa52b7d1c6cf5718c680ec8",
+    "kvdId": 5,
+    "text": "Denken Sie, dass Sie Ihren Marktanteil und den verfügbaren Markt noch weiter aus- und aufbauen können?",
+    "influencerText": "Signifikante Marktgröße und -anteil bieten eine Preisgestaltungs- und Verhandlungsmacht",
+    "min": "Unser Marktanteil ist nicht messbar in einem nicht definierbarem Markt.",
+    "max": "Ich bin Monopolist in einem ständig erweiterbarem Marktsegment.",
+    "value": 0
+  },
+  {
+    "id": "5aa52b7d1c6cf5718c680ec9",
+    "kvdId": 5,
+    "text": "Anstatt eigene, langwierige Entwicklungen voranzutreiben, glauben Sie, dass Sie Ihr Akquise-Kapital noch aufstocken könnten, um strategisch oder finanziell passende Unternehmen aufzukaufen?",
+    "influencerText": "Verfügbares M&A Kapital, um Technologien, Kundenzugänge oder Experten über Zukäufe zu erwerben",
+    "min": "Wir haben keine messbare Brand- und Marketingstrategie.",
+    "max": "Unsere M&A Kasse ist bestens gefüllt und wir sondieren potenzielle Übernahmekandidaten.",
+    "value": 0
+  },
+  {
+    "id": "5aa52b7d1c6cf5718c680eca",
+    "kvdId": 5,
+    "text": "Denken Sie, Sie könnten Ihre Brand- und Marketingstrategie noch schärfen, um kontinuierlich neue Interessenten zu generieren?",
+    "influencerText": "Erfolgreiche Brand- und Marketingstrategien die kaufbereite Kunden und die besten Joint Venture Partner anziehen und gewinnen",
+    "min": "Geld für Zukäufe können wir nicht investieren, wenn, dann entwickeln wir selber.",
+    "max": "Wir haben eine gute Strategie, die täglich neue Interessenten in unsere Verkaufspipeline spült.",
+    "value": 0
+  },
+  {
+    "id": "5aa52b7d1c6cf5718c680ecb",
+    "kvdId": 5,
+    "text": "Denken Sie, daß Sie sich so positionieren können, dass Sie ein Nischenprodukt / Service anbieten, dass auf dem Markt so einzigartig ist, so dass Ihre Kunden hart arbeiten müssen, um einen anderen Anbieter zu finden, der anbietet was Sie verkaufen?",
+    "influencerText": "Klare Positionierung und aussichtsreiche Wettbewerbssituation",
+    "min": "Wir müssen jeden Wettbewerber zu Lasten der Rentabilität unterbieten, um an Aufträge zu kommen.",
+    "max": "Wir stechen jeden Wettbewerber durch unschlagbares Preis/Leistungsverhältnis und Qualität aus.",
+    "value": 0
+  },
+  {
+    "id": "5aa52b7d1c6cf5718c680ecc",
+    "kvdId": 6,
+    "text": "Denken Sie, dass Sie die Innovationskultur und das Markenmanagement in Ihrem Unternehmen noch ausbauen können, um langfristig an der Spitze zu bleiben?",
+    "influencerText": "Management gefördertes und aktives Innovationsmanagement (KVP)",
+    "min": "Innovationen sind nicht nötig. Wir waren immer an der Spitze und werden es auch bleiben.",
+    "max": "Unsere R&D Abteilung arbeitet ständig an Innovationen, die auch von Mitarbeitern initiiert werden.",
+    "value": 0
+  },
+  {
+    "id": "5aa52b7e1c6cf5718c680ecd",
+    "kvdId": 6,
+    "text": "Glauben Sie, daß Sie noch mehr Profit aus der digitalen Transformation Ihres Unternehmens holen könnten?",
+    "influencerText": "Hohe Akzeptanz und Nutzung von innovativen Management- und Leadershipmethoden",
+    "min": "Wir haben eine eigene Webseite / Onlineshop.",
+    "max": "Unser Kerngeschäft hat eine hohe digitale Reife und digitale Geschäftsmodelle sind etabliert.",
+    "value": 0
+  },
+  {
+    "id": "5aa52b7e1c6cf5718c680ece",
+    "kvdId": 6,
+    "text": "Glauben Sie, dass Sie die Kosteneffizienz- und Produktivitätssteigerungs-effekte der Digitalisierung schon voll ausgeschöpft haben oder können Sie sich vorstellen, dass es noch unentdeckte Hebel gibt, die Ihre Prozesse und Erträge verbessern können?",
+    "influencerText": "Steigender Anteil digitaler Geschäftsmodelle in der Wertschöpfungskette",
+    "min": "Wir nutzen emails und der Rest ist manuelle Arbeit, die nicht digitalisiert werden kann.",
+    "max": "Wir haben unsere gesamte Wertschöpfungskette voll digitalisiert und automatisiert.",
+    "value": 0
+  },
+  {
+    "id": "5aa52b7e1c6cf5718c680ecf",
+    "kvdId": 6,
+    "text": "Denken Sie, dass Sie computergestützte Verfahren noch stärker nutzen können, um Ihre Supply Chain und Produktivität auf dem höchsten, ausfallminimierten Leistungsniveau zu halten?",
+    "influencerText": "Hohe digitale Reife (z.B. Automatisierung) in den administrativen Bereichen",
+    "min": "Wir verlassen uns nicht auf Computer und kümmern uns um Ausfälle wenn notwendig.",
+    "max": "Unsere Kernsysteme sind maximal ausfallgesichert und auf höchstem Level konfigurierbar.",
+    "value": 0
+  },
+  {
+    "id": "5aa52b7e1c6cf5718c680ed0",
+    "kvdId": 6,
+    "text": "Mit jeder industriellen Revolution entstehen neue Branchen. Denken Sie, dass Sie durch den Einsatz neuer Technologien völlig neue Geschäftsfelder aufbauen können?",
+    "influencerText": "Hohe Nutzung von Technologien zur Erweiterung der Wertschöpfungskette",
+    "min": "Wir kümmern uns um die Aufrechterhaltung unseres aktuellen Geschäftsbetriebes.",
+    "max": "Wir treiben den Einsatz neuer Technologien zum Aufbau neuer Geschäftsfelder intensiv voran.",
+    "value": 0
+  },
+  {
+    "id": "5aa52b7e1c6cf5718c680ed1",
+    "kvdId": 6,
+    "text": "Glauben Sie, dass Sie in Ihrem Unternehmen durch weitere Investitionen bzw. Modernisierungen den wachsenden Anforderungen des Marktes mehr gerecht werden können?",
+    "influencerText": "Geringer Investitions- bzw. Modernisierungsbedarf zur Sicherstellung der Zukunftsfähigkeit",
+    "min": "Investitionen und Modernisierungen halten wir zurück, um unsere Bilanz aufzubessern.",
+    "max": "Unsere Maschinen und Infrastruktur ist auf dem neusten Stand der Technik und weitere Investitionen sind nicht notwendig.",
+    "value": 0
+  },
+  {
+    "id": "5aa52b7e1c6cf5718c680ed2",
+    "kvdId": 6,
+    "text": "Daten sind die neuen Firmenwerte. Haben Sie das Gefühl, dass Sie hilfreiche Daten in Ihrem Unternehmen noch besser erfassen und nutzen für mehr Umsatz und Effektivität nutzen zu können?",
+    "influencerText": "Professionelles Big Data Management in strategischen Bereichen (z.B. Marketing oder Produktentwicklung)",
+    "min": "Wir wissen nicht, welche Daten wir sammeln und nutzen sollen.",
+    "max": "Wir bekommen von allen Prozessen und Schnittstellen Daten in Echtzeit.",
+    "value": 0
+  },
+  {
+    "id": "5aa52b7e1c6cf5718c680ed3",
+    "kvdId": 7,
+    "text": "Haben Sie das Gefühl, Sie müssen Ihr Unternehmen noch besser vorbereiten, wenn Sie das Tagesgeschäft von heute auf morgen verlassen würden?",
+    "influencerText": "Etablierte Prozesse und Aufgabendelegation zur Minimierung der Abhängigkeit im Tagesgeschäft",
+    "min": "Ohne mich geht gar nichts im Tagesgeschäft. Das Unternehmen würde zum Stillstand kommen.",
+    "max": "Alle (Entscheidungs-)Prozesse in meinem Unternehmen laufen auch ohne mich.",
+    "value": 0
+  },
+  {
+    "id": "5aa52b7f1c6cf5718c680ed4",
+    "kvdId": 7,
+    "text": "Wenn Sie Ihr Unternehmen verlassen werden, denken Sie, dass Sie die Auswirkungen auf Unternehmenskultur, Kundenbeziehungen und gesellschaftlichen Wahrnehmungen bereits ausreichend bedacht haben oder müssen Sie diesbzgl. noch wichtige Themen besser vorbereiten?",
+    "influencerText": "Klare, Werte orientierte Kommunikationsplanung zur Steuerung betriebskultureller Herausforderungen",
+    "min": "Keine Ahnung, wenn ich weg bin, bin ich weg.",
+    "max": "Ich habe die Kunden- Und gesellschaftlich relevanten Bereiche darauf vorbereitet, eines Tages das Unternehmen zu verlassen.",
+    "value": 0
+  },
+  {
+    "id": "5aa52b7f1c6cf5718c680ed5",
+    "kvdId": 7,
+    "text": "Können Sie Ihr Unternehmen kurzfristig verlassen oder denken Sie, dass Sie Ihr Ausscheiden noch besser mit wichtigen, externen Ansprechpartnern  vorbereiten können? ",
+    "influencerText": "Keine, oder klar trennbare externe Verpflichtungen z.B. Bürgschaften oder Gesellschafterdarlehen",
+    "min": "Es wurden Verpflichtungen eingegangen und Sicherheiten gebunden, die aus- und abzulösen sind.",
+    "max": "Ich kann alle externen Verpflichtung sofort auflösen und eingebrachte Sicherheiten ablösen.",
+    "value": 0
+  },
+  {
+    "id": "5aa52b7f1c6cf5718c680ed6",
+    "kvdId": 7,
+    "text": "Glauben Sie, dass Sie Entscheidungsstrukturen in Ihrem Unternehmen noch verbessern können, um schneller und unbürokratischer wichtigen Entscheidungen zu treffen?",
+    "influencerText": "Transparente Stakeholderanalyse und etablierte Kommunikations- bzw. Entscheidungsstrukturen",
+    "min": "Ich muss Entscheidungen durch verschiedene externe, interne und familiäre Gremien genehmigen lassen.",
+    "max": "Ich treffe alle Entscheidungen alleine und lege niemandem Rechenschaft darüber ab.",
+    "value": 0
+  },
+  {
+    "id": "5aa52b7f1c6cf5718c680ed7",
+    "kvdId": 7,
+    "text": "Für den Fall, dass Sie das Unternehmen verlassen, haben Sie das Gefühl, dass Sie die Handlungsfähigkeit Ihres Vertreters/ Ihrer Managementebene noch verbessern müssen, damit diese das Unternehmen und Entscheidungen in Ihrem Sinne treffen und erfolgreich umsetzen können?",
+    "influencerText": "Schlanke, flexible und lernende Organisationskultur und Unternehmensstruktur",
+    "min": "Es gibt kein Managementteam. Ich bin immer erreichbar und in alle Entscheidungsprozesse und Aktivitäten involviert.",
+    "max": "Wir haben ein Management-Team mit wachstumsorientierten Anreizverträgen ausgestattet.",
+    "value": 0
+  },
+  {
+    "id": "5aa52b7f1c6cf5718c680ed8",
+    "kvdId": 8,
+    "text": "Glauben Sie, dass Sie den Prozentsatz Ihrer Kunden, die SEHR ZUFRIEDEN mit den Dienstleistungen / Produkten sind, die Ihr Unternehmen bietet, noch steigern können?",
+    "influencerText": "Regelmäßig gemessene hohe Kundenzufriedenheit und korrigierende Maßnahmen",
+    "min": "Ich bin mir nicht sicher - wir messen nicht die Kundenzufriedenheit.",
+    "max": "Es sind bereits mehr als 90% unserer Kunden \"sehr zufrieden\".",
+    "value": 0
+  },
+  {
+    "id": "5aa52b7f1c6cf5718c680ed9",
+    "kvdId": 8,
+    "text": "Denken Sie, dass Sie Ihren Einfluss (gemessen an der Anzahl der Menschen, die sich über email Listen oder Social Media Profile für Informationen über Ihr Unternehmen interessieren)noch steigern können?",
+    "influencerText": "Hohe soziale Reichweite und Response-Rate",
+    "min": "Wir haben keine weiteren Interessentenlisten außer unserer Kundendatei.",
+    "max": "Wir erreichen bereits mehr als 100.000 interessierte Personen.",
+    "value": 0
+  },
+  {
+    "id": "5aa52b7f1c6cf5718c680eda",
+    "kvdId": 8,
+    "text": "Denken Sie, Sie können die Anzahl der Lizenznehmer und Kunden erhöhen, deren Geschäftserfolg von den Produkten und Dienstleistungen Ihres Unternehmens abhängig sind?",
+    "influencerText": "Partnerabhängigkeiten - Der Erfolg Anderer basiert stark auf Ihren Produkten und Dienstleistunge",
+    "min": "Ein sehr kleiner Anteil der Geschäftspartner müssen kaufen, was wir zur Verfügung stellen (weniger als 10% Erfolgsabhängigkeit)",
+    "max": "Die meisten Geschäftspartner müssen kaufen, was wir zur Verfügung stellen (mehr als 90% Erfolgsabhängigkeit)",
+    "value": 0
+  },
+  {
+    "id": "5aa52b7f1c6cf5718c680edb",
+    "kvdId": 8,
+    "text": "Haben Sie das Gefühl, dass Sie die Wahrnehmung Ihres Unternehmens am Markt bei Kunden, Geschäftspartnern und Mitarbeitern noch verbessern könnten?",
+    "influencerText": "Positiv wahrgenommenes und in der Zielgruppe stark präsentes Image und Branding",
+    "min": "Unfaire Bezahlung und Preisgestaltung zur Profitmaximierung und zu Lasten von Qualität und Service",
+    "max": "Hohe Qualität, entsprechende Bezahlung, und spannende Produkte für die Kunden bereit sind, Geld zu investieren",
+    "value": 0
+  },
+  {
+    "id": "5aa52b801c6cf5718c680edc",
+    "kvdId": 8,
+    "text": "Denken Sie, dass Sie weitere Attraktivitätsfaktoren, wie \"geistiges Eigentum\" oder vorteilhafte Verträge / Handelsabkommen, Auszeichnungen, Zertifizierungen, etw. aufbauen könnten?",
+    "influencerText": "Sicherung des Wettbewerbsvorteils und Marktmacht durch IP / Patente",
+    "min": "Wir besitzen die branchenüblichen Standardzertifizierungen. Um mehr haben wir uns bisher keine Gedanken gemacht.",
+    "max": "Wir besitzen bereits unzählige Awards, Zertifizierungen, Patente, exklusive Handelsabkommen.",
+    "value": 0
+  }
+]

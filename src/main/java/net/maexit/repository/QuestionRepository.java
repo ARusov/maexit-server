@@ -20,5 +20,7 @@ public interface QuestionRepository extends MongoRepository<Question, String> {
 
     public List<Question> findAllByKvdId(int id);
 
+    public  Question save (Question question);
+
 
 }

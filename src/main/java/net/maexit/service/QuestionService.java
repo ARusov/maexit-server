@@ -47,4 +47,8 @@ public class QuestionService {
 
         return questions;
     }
+
+    public  Question save (Question question){
+        return repository.save(question);
+    }
 }

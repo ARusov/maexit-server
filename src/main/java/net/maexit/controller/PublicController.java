@@ -4,7 +4,7 @@ import net.maexit.entity.Answer;
 import net.maexit.entity.Industry;
 import net.maexit.entity.Question;
 import net.maexit.entity.User;
-import net.maexit.service.AnswerService;
+import net.maexit.repository.AnswerRepository;
 import net.maexit.service.IndustryService;
 import net.maexit.service.QuestionService;
 import net.maexit.service.UserService;
@@ -18,11 +18,9 @@ import org.springframework.web.bind.annotation.*;
 import org.thymeleaf.TemplateEngine;
 import org.thymeleaf.context.Context;
 
-import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
-import java.util.stream.Collectors;
 
 /**
  * Created by arusov on 12.03.2018.
@@ -47,7 +45,7 @@ public class PublicController {
     private IndustryService industryService;
 
     @Autowired
-    private AnswerService answerService;
+    private AnswerRepository answerService;
 
     @Autowired
     private UserService userService;
@@ -73,11 +71,11 @@ public class PublicController {
             List<Question> questions = questionService.findAll();
             List<Question> aQuestions = answer.getQuestions();
 
-            Set<Question> sq=new HashSet<>(questions);
+            Set<Question> sq = new HashSet<>(questions);
 
-            for(Question q:questions){
-                for(Question aq:aQuestions){
-                    if(aq.getId().equals(q.getId())){
+            for (Question q : questions) {
+                for (Question aq : aQuestions) {
+                    if (aq.getId().equals(q.getId())) {
                         sq.remove(q);
                     }
                 }
