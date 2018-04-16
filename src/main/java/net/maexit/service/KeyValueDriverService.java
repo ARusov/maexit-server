@@ -23,6 +23,9 @@ public class KeyValueDriverService {
     public List<KeyValueDriver> findAll(){
         return repository.findAll();
     }
+ public List<KeyValueDriver> findAllOrOrderByOrder(){
+        return repository.findAllByOrderByOrdering();
+    }
 
     public KeyValueDriver insert (KeyValueDriver keyValueDriver){
         return repository.insert(keyValueDriver);

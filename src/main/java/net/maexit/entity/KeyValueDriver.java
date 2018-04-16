@@ -12,6 +12,15 @@ public class KeyValueDriver {
     private String name;
     private String text;
     private String color;
+    private int ordering;
+
+    public int getOrdering() {
+        return ordering;
+    }
+
+    public void setOrdering(int ordering) {
+        this.ordering = ordering;
+    }
 
     public String getColor() {
         return color;

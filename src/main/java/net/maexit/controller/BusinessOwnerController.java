@@ -44,7 +44,8 @@ public class BusinessOwnerController {
     @RequestMapping("/kvd")
     @ResponseBody
     public List<KeyValueDriver> getKeyValueDrivers() {
-        return keyValueDriverService.findAll();
+
+        return keyValueDriverService.findAllOrOrderByOrder();
     }
 
     @RequestMapping("/answer/{email}")

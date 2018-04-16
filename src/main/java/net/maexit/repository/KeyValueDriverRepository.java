@@ -12,6 +12,7 @@ public interface KeyValueDriverRepository extends MongoRepository<KeyValueDriver
 
     public KeyValueDriver findById(int id);
     public List<KeyValueDriver> findAll();
+    public List<KeyValueDriver> findAllByOrderByOrdering();
     public KeyValueDriver insert(KeyValueDriver keyValueDriver);
 
 }
